@@ -1,0 +1,27 @@
+{
+  "justin.gohde@trinityschoolnyc.org": {
+    "firstName": "justin",
+    "boards": [
+      "SOMEid4",
+      "hello",
+      "board33"
+    ]
+  },
+  "amelia.dalvito22@trinityschoolnyc.org": {
+    "firstName": "amelia",
+    "boards": [
+      "SOMEid4",
+      "hello",
+      "board33",
+      "hello"
+    ]
+  },
+  "justin.test1@trinityschoolnyc.org": {
+    "firstName": "justin1",
+    "boards": [
+      "SOMEid4",
+      "hello",
+      "board33"
+    ]
+  }
+}

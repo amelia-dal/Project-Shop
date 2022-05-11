@@ -1,0 +1,41 @@
+<%- include('../partials/header', {title:"Play: P, R, S"}) -%>
+
+<p> MY BOARDS
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>
+        <form action="MyBoards/new" method="GET">
+          <input type="submit" value="NEW BOARD">
+        </form>
+      </th>
+      </tr>
+  </table>
+  <br>
+
+  <%for (let b=0; b<boardTitles.length; b++){%>
+<table>
+  <tr>
+    <th>
+  <%=boardTitles[b];%>
+
+  <form action="MyBoards/products/<%=boards[b]%>" method="GET">
+    <input type="submit" value="MY PRODUCTS">
+  </form>
+
+  <form action="MyBoards/edit/<%=boards[b]%>" method="GET">
+    <input type="submit" value="...">
+  </form>
+
+  <form action="MyBoards/delete/<%=boards[b]%>" method="POST">
+    <input type="submit" value="trash">
+  </form>
+  <br><br>
+
+    </th>
+    </tr>
+</table>
+<%} //render %>
+
+  <%- include('../partials/footer') -%>

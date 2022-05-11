@@ -1,0 +1,38 @@
+{
+  "SOMEid1": {
+    "boardName": "board1",
+    "boardProducts": [
+      "ID1",
+      "ID2",
+      "ID3"
+    ],
+    "rating": "2"
+  },
+  "SOMEid2": {
+    "boardName": "board2",
+    "boardProducts": [
+      "ID4",
+      "ID5",
+      "ID6"
+    ],
+    "rating": "1"
+  },
+  "SOMEid4": {
+    "boardName": "Beach Vacation Shopping",
+    "boardProducts": [
+      "ID7",
+      "ID8",
+      "ID9"
+    ],
+    "rating": "3"
+  },
+  "hello": {
+    "boardName": "hello",
+    "boardProducts": []
+  },
+  "board33": {
+    "boardName": "Christmas Wishlist",
+    "boardProducts": [],
+    "rating": "0"
+  }
+}

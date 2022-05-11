@@ -1,0 +1,15 @@
+<%- include('../../partials/header', {title:"Play: P, R, S"}) -%>
+<p>EDIT BOARD
+<p>current board name: <%=boardTitle%>
+  <p>board Id: <%=boardId%>
+
+  <br>
+  <br>
+
+  <form action="/MyBoards/edit/<%=boardId%>" method="POST">
+    <label for="name">New Board Name:</label>
+    <input type="text" id="name" name="boardName" value=""><br>
+    <br><br>
+    <input type="submit" value="SUBMIT">
+  </form>
+  <%- include('../../partials/footer') -%>

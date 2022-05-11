@@ -1,0 +1,13 @@
+<%- include('partials/header', {title:"Shopping Site"}) -%>
+
+<p> Shopping Site
+  <br>
+  <br>
+  <% if(user){ %>
+  <a href="/MyBoards">Click to Make a New Board!</a>
+  <br>
+    <a href="chat">Click to Access Chat</a>
+  <% }else{ %>
+    <a href="/Login">Click to Login</a>
+  <% }%>
+  <%- include('partials/footer') -%>

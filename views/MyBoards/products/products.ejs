@@ -1,0 +1,35 @@
+<%- include('../../partials/header', {title:"Play: P, R, S"}) -%>
+
+<p> My products
+  <br>
+  <br>
+
+  <%for (let b=0; b<productId.length; b++){%>
+  <table>
+  <tr>
+    <th>
+      Name: <%=productTitles[b];%>
+      <br>
+      Cost:$<%=productPrice[b];%>
+      <br>
+      Link: <%=productLink[b];%>
+      <br>
+      <img src="/images/<%=productImage[b];%>" width="100px" />
+
+      <h4>Upload Image</h4>
+
+      <form action="/MyBoards/products/<%=boardId%>/<%=productId[b]%>" enctype="multipart/form-data" method="POST">
+        <input type="file" name="picture" accept="image/*" required/>
+        <br>
+        <%=console.log("PRODUCT ID UPLOADDDD: "+productId[b]);%>
+
+        <input type="submit" value="Upload Photo" />
+      </form>
+    </th>
+    </tr>
+  </table>
+
+  <br>
+
+  <%} //render %>
+  <%- include('../../partials/footer') -%>
